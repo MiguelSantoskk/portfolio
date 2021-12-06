@@ -1,0 +1,74 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    /* Poppins syntax: font-family: 'Poppins', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    text-align: center;
+    color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.person img {
+    width: 160px;
+    height: 160px;
+    border-radius: 20rem;
+    outline-offset: 5px;
+    outline: 2px solid var(--purple);
+}
+
+.person p {
+    margin: 15px 0 33px;
+    font-weight: 300;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    border: 1.6px solid var(--purple);
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    margin: 16px 0px;
+    padding: 7px 110px;
+    letter-spacing: 2px;
+    transition: .6s;
+}
+
+.links a:hover {
+    box-shadow: 2px 2px 1px rgba(187, 153, 221, 0.849);
+    transition: .3s;
+}
+
+.links ul li:last-child a {
+    margin-bottom: 2.6rem; 
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
