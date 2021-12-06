@@ -1,0 +1,86 @@
+:root {
+  --page-background: #EAEAEA;
+  --recipe-background: #FFFFFF;
+  --titles-and-subtitles: #1B1B1B;
+  --footer-and-figcaption: #8F8F8F;
+  --other-texts: #39393A;
+  --main-font: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--page-background);
+  margin: 2rem auto;
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background-color: var(--recipe-background);
+  border-radius: 10px;
+  padding: 80px 0;
+  width: min(1100px, 95vw);
+}
+
+h1, figure, article {
+  margin: 0px 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+   font-size: 1.75rem; 
+   font-weight: 700;    
+   text-align: center;
+   color: var(--titles-and-subtitles);
+   margin: 0 0 30px;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+figcaption {
+  text-align: right;
+  font-size: 12px;
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--titles-and-subtitles);
+    margin: 45px 0;
+}
+
+.ingredients-list li, .preparation-list li {
+  margin: 30px;
+}
+
+ul, li, ol, p {
+    font-size: 16px;
+    color: var(--other-texts);
+}
+
+footer p {
+  text-align: center;
+  margin: 4rem 0 0;
+  font-size: 12px;
+}
+
+@media (max-width: 420px) {
+  article {
+    margin: 20px;
+  }
+}
+
