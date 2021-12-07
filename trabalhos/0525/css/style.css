@@ -1,0 +1,19 @@
+body{
+	background-color: #000000;
+}
+
+h1 {
+	background-color: #66bb99;
+	color: #fff;
+	font-size:60px;
+}
+
+p {
+	font-family: arial;
+}
+
+img {
+	border: solid 10px #666;
+	padding: 10px;
+	margin: 10px;
+}
