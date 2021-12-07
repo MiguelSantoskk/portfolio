@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sportbr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- library validate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<h1>Checkout</h1> 
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/action_page.php">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Endereço</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Nome completo</label>
+                        <input type="text" id="fname" name="fullname"  required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i> CEP </label>
+                        <input type="text" id="adr" name="address">
+
+                        <div class="row">
+                            <div class="col-50">
+                            </div>
+                            <div class="col-50">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Forma de pagamento</h3>
+                        <label for="fname">cartões</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="cname">Nome do cartão</label>
+                        <input type="text" id="cname" name="cardname" required>
+                        <label for="ccnum">Número do cartão de crédito</label>
+                        <input type="text" id="ccnum" name="cardnumber" required>
+                        <div class="row">
+                            <div class="col-50">
+                            </div>
+                            <div class="col-50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Encomenda chega até 20 dias
+                </label>
+                <input type="submit" value="Finalizar compra" class="btn">
+            </form>
+        </div>
+    </div>
+
+<!-- script validate js -->
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Por favor coloque seu nome completo*",
+            email:"Por favor coloque seu email*",
+            cardname:"Por favor coloque o nome do seu cartão*",
+            cardnumber:"Por favor coloque o numero do seu cartão*",
+        },
+    });
+</script>
+</body>
+</html>
