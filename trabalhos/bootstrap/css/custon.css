@@ -1,0 +1,57 @@
+body,
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#header {
+    width: 100%;
+    background-color: transparent;
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #000;
+    border-bottom: solid 2px transparent;
+}
+
+#header .nav-link:hover {
+    color: #70f;
+    border-bottom: solid 2px #70f;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0rem;
+    font-size: 3.125rem;
+}
+
+.container .card {
+    border: .5px solid #70f;
+}
+
+.text-muted,
+li {
+    color: rgb(67, 54, 179) !important;
+    text-decoration: none;
+}
+
+.text-muted:hover {
+    color: rgb(149, 78, 231) !important;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+form {
+    padding: 2rem;
+}
